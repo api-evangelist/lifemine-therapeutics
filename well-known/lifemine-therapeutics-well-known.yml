@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://lifeminetx.com/.well-known/*
+host: https://lifeminetx.com
+notes: >-
+  LifeMine Therapeutics publishes no /.well-known/ discovery surface. Every
+  standard document was probed and returned 404. Recorded so future enrichment
+  runs do not re-probe blindly; no WellKnown or SecurityTxt pointer is wired in
+  apis.yml because no document is genuinely present.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
